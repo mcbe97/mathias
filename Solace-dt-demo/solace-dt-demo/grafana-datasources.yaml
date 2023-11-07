@@ -1,0 +1,32 @@
+datasources:
+#  - name: Prometheus
+#    type: prometheus
+#    access: proxy
+#    orgId: 1
+#    url: http://prometheus:9090
+#    basicAuth: false
+#    isDefault: false
+#    version: 1
+#    editable: false
+  - name: Tempo
+    type: tempo
+    access: proxy
+    orgId: 1
+    url: http://tempo:3200
+    basicAuth: false
+    isDefault: true
+    version: 1
+    editable: false
+    apiVersion: 1
+    uid: tempo
+#  - name: Zipkin
+#    type: zipkin
+#    access: proxy
+#    orgId: 1
+#    url: http://zipkin:9411  # Adjusted URL for Zipkin
+#    basicAuth: false
+#    isDefault: false  # Set to false to prevent conflict with Tempo
+#    version: 1
+#    editable: false
+#    apiVersion: 1
+#    uid: zipkin  # Adjusted UID for Zipkin
